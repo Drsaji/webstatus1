@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status - Admin View</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <script defer src="firebase-config.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Control Panel</h1>
+        <div id="admin-panel" class="hidden">
+            <p>Current Status: <span id="admin-status-text">Loading...</span></p>
+            <button id="online-btn">Set Online</button>
+            <button id="offline-btn">Set Offline</button>
+            <button id="logout-btn">Logout</button>
+        </div>
+        <div id="login-panel">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email" value="sajithaadhikaram@gmail.com" readonly>
+
+            <input type="password" id="password" placeholder="Password" value="sajitha2456" readonly >
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+</body>
+</html>
